@@ -38,25 +38,25 @@
     </section>
 
     <section class="bg-[#F8F6F4] py-[72px] px-[2rem]">
-        <div class="flex mx-auto rounded-full !overflow-hidden w-fit mb-28">
-            <div id="tab0" class="py-[0.5rem] px-[1.75rem] bg-[#FE6100] text-white font-semibold cursor-pointer">Monthly
+        <div class="flex mx-auto rounded-full !overflow-hidden w-fit mb-16">
+            <div id="tab0" onclick="changeTab(0)" class="py-[0.5rem] px-[1.75rem] bg-[#FE6100] text-white font-semibold cursor-pointer">Monthly
             </div>
-            <div id="tab1" class="py-[0.5rem] px-[1.75rem] bg-white text-[#FE6100] font-semibold cursor-pointer">Yearly
+            <div id="tab1" onclick="changeTab(1)" class="py-[0.5rem] px-[1.75rem] bg-white text-[#FE6100] font-semibold cursor-pointer">Yearly
                 - Save 10%
             </div>
         </div>
 
         <div class="grid grid-cols-3 gap-[1.75rem] items-end">
-            <div class="bg-white rounded-md flex flex-col relative ">
+            <div class="bg-white rounded-md flex flex-col relative pb-8">
                 <div class="flex flex-col flex-1 px-[2.25rem] pt-[2.25rem]">
                     <h3 class="text-[32px] text-[#222525] leading-[1.2] font-bold mb-[0.75rem] text-center">Professional
                     </h3>
-                    <div class="!items-end flex justify-center w-full my-[1.5rem] text-[#222525]">
+                    <div id="professionalPrice" class="!items-center flex justify-center w-full my-[1.5rem] text-[#222525]">
                         <div class="text-[24px] leading-[1.45]">$</div>
-                        <div class="text-[54px] font-bold mb-[0.75rem leading-[0.9] pl-[0.25rem]">89.95</div>
-                        <div class="text-[24px] leading-[1.45]]">/mo</div>
+                        <div class="text-[54px] font-bold mb-[0.75rem] leading-[0.9] pl-[0.25rem]">89.95</div>
+                        <div class="text-[24px] leading-[1.45]">/mo</div>
                     </div>
-                    <div class="text-center text-[#718096] font-medium mb-6">$80.95/mo billed yearly, save 10%</div>
+                    <div id="professionalBilling" class="text-center text-[#718096] font-medium mb-6">$80.95/mo billed yearly, save 10%</div>
                     <div class="py-[1.5rem] pr-3 border-y border-y-[#ecebea] font-medium">For larger businesses or SEO
                         agencies working on multiple projects</div>
                 </div>
@@ -207,16 +207,16 @@
                         Trial</button>
                 </div>
             </div>
-            <div class="bg-white rounded-md flex flex-col relative">
+            <div class="bg-white rounded-br-md rounded-bl-md flex flex-col relative pb-8">
                 <div class="flex flex-col flex-1 px-[2.25rem] pt-[2.25rem]">
                     <h3 class="text-[32px] text-[#222525] leading-[1.2] font-bold mb-[0.75rem] text-center">Webmaster
                     </h3>
-                    <div class="!items-end flex justify-center w-full my-[1.5rem] text-[#222525]">
+                    <div id="webmasterPrice" class="!items-center flex justify-center w-full my-[1.5rem] text-[#222525]">
                         <div class="text-[24px] leading-[1.45]">$</div>
-                        <div class="text-[54px] font-bold mb-[0.75rem leading-[0.9] pl-[0.25rem]">49.95</div>
-                        <div class="text-[24px] leading-[1.45]]">/mo</div>
+                        <div class="text-[54px] font-bold mb-[0.75rem] leading-[0.9] pl-[0.25rem]">49.95</div>
+                        <div class="text-[24px] leading-[1.45]">/mo</div>
                     </div>
-                    <div class="text-center text-[#718096] font-medium mb-6">$49.95/mo billed yearly, save 10%</div>
+                    <div id="webmasterBilling" class="text-center text-[#718096] font-medium mb-6">$49.95/mo billed yearly, save 10%</div>
                     <div class="py-[1.5rem] pr-3 border-y border-y-[#ecebea] font-medium">For growing businesses looking
                         for best-in-class SEO analysis and monitoring</div>
                 </div>
@@ -366,9 +366,171 @@
                     <button class="w-full text-white text-lg font-semibold bg-[#FE6100] py-[10px] rounded-lg">Start Free
                         Trial</button>
                 </div>
+                <div
+                    class="absolute -top-7 left-0 w-full text-center py-[6px] bg-[#FE6100] rounded-tr-md rounded-tl-md text-white font-medium text-sm">
+                    Most Popular</div>
+            </div>
+            <div class="bg-white rounded-md flex flex-col relative pb-8">
+                <div class="flex flex-col flex-1 px-[2.25rem] pt-[2.25rem]">
+                    <h3 class="text-[32px] text-[#222525] leading-[1.2] font-bold mb-[0.75rem] text-center">Basic
+                    </h3>
+                    <div id="basicPrice" class="!items-center flex justify-center w-full my-[1.5rem] text-[#222525]">
+                        <div class="text-[24px] leading-[1.45]">$</div>
+                        <div class="text-[54px] font-bold mb-[]0.75rem leading-[0.9] pl-[0.25rem]">29.95</div>
+                        <div class="text-[24px] leading-[1.45]">/mo</div>
+                    </div>
+                    <div id="basicBilling" class="text-center text-[#718096] font-medium mb-6">$29.95/mo billed yearly, save 10%</div>
+                    <div class="py-[1.5rem] pr-3 border-y border-y-[#ecebea] font-medium">For new businesses looking to
+                        find the key SEO issues</div>
+                </div>
+                <div class="flex flex-col space-y-3 mt-2 px-[2.25rem]">
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 14 14" focusable="false"
+                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
+                            <g fill="currentColor">
+                                <polygon
+                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
+                                </polygon>
+                            </g>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">Unlimited SEO Analysis</p>
+                            <p class="text-[#718096] pt-2 !font-medium">more than 70 factors</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 14 14" focusable="false"
+                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
+                            <g fill="currentColor">
+                                <polygon
+                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
+                                </polygon>
+                            </g>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">Daily SEO Score Monitoring</p>
+                            <p class="text-[#718096] pt-2 !font-medium">3 websites</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 14 14" focusable="false"
+                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
+                            <g fill="currentColor">
+                                <polygon
+                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
+                                </polygon>
+                            </g>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">Competitor SEO Comparisons</p>
+                            <p class="text-[#718096] pt-2 !font-medium">1 competitors</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 14 14" focusable="false"
+                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
+                            <g fill="currentColor">
+                                <polygon
+                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
+                                </polygon>
+                            </g>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">Keyword Position Tracking</p>
+                            <p class="text-[#718096] pt-2 !font-medium">50 keywords</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 14 14" focusable="false"
+                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
+                            <g fill="currentColor">
+                                <polygon
+                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
+                                </polygon>
+                            </g>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">Site Uptime Monitoring</p>
+                            <p class="text-[#718096] pt-2 !font-medium">1 Locations</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 14 14" focusable="false"
+                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
+                            <g fill="currentColor">
+                                <polygon
+                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
+                                </polygon>
+                            </g>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">Site Speed Monitoring</p>
+                            <p class="text-[#718096] pt-2 !font-medium">3 websites</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 14 14" focusable="false"
+                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
+                            <g fill="currentColor">
+                                <polygon
+                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
+                                </polygon>
+                            </g>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">Sitemap Generator</p>
+                            <p class="text-[#718096] pt-2 !font-medium">3 websites</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 14 14" focusable="false"
+                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
+                            <g fill="currentColor">
+                                <polygon
+                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
+                                </polygon>
+                            </g>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">Broken Link Detector</p>
+                            <p class="text-[#718096] pt-2 !font-medium">3 websites</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 24 24" focusable="false"
+                            class="chakra-icon css-1669j6n w-4 h-4 mr-3 text-[#E53E3E]">
+                            <path fill="currentColor"
+                                d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z">
+                            </path>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">White Label Reports</p>
+                            <p class="text-[#718096] pt-2 !font-medium">not included</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+                        <svg viewBox="0 0 24 24" focusable="false"
+                            class="chakra-icon css-1669j6n w-4 h-4 mr-3 text-[#E53E3E]">
+                            <path fill="currentColor"
+                                d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z">
+                            </path>
+                        </svg>
+                        <div class="">
+                            <p class="text-[#222525] font-medium">Team</p>
+                            <p class="text-[#718096] pt-2 !font-medium">not included</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 px-[2.25rem]">
+                    <button class="w-full text-white text-lg font-semibold bg-[#FE6100] py-[10px] rounded-lg">Start Free
+                        Trial</button>
+                </div>
             </div>
         </div>
     </section>
+
+
+    <script src="./pricing.js"></script>
 </body>
 
 </html>
