@@ -15,3 +15,21 @@ function changeTab(tabNumber) {
     document.getElementById(`tab${tabNumber}`).classList.remove('opacity-[0.24]');
     document.getElementById(`tab${tabNumber}`).classList.add('border-t-black');
 }
+
+window.addEventListener('scroll', function () {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    const heroSectionHeight = document.querySelector('#hero-section').offsetHeight;
+
+    if (window.scrollY > heroSectionHeight) {
+        scrollToTopBtn.style.display = 'inline';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+
+document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
