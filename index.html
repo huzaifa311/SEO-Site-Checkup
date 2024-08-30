@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Tools, Software and Articles | SEO Site Checkup</title>
+    <link rel="logo" href="https://seositecheckup.comfavicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header class="flex justify-between items-center text-[16px] px-6 py-4 bg-white font-semibold text-[#222525]">
+        <div class="flex gap-12">
+            <img src="./images/logo.svg" alt="Logo" />
+            <div class="flex items-center gap-6 pt-2">
+                <a class="hover:text-[#fe6100] cursor-pointer">Pricing</a>
+                <a class="hover:text-[#fe6100] cursor-pointer">Free Tools</a>
+                <a class="hover:text-[#fe6100] cursor-pointer">Articles</a>
+            </div>
+        </div>
+        <div class="flex gap-5 items-center">
+            <a class="px-3 py-1 border border-[#e2e8f0] rounded-lg">Log In</a>
+            <a class="px-3 py-1 bg-[#fe6100] text-white rounded-lg">Start Free Trial</a>
+        </div>
+    </header>
+
+    <section
+        class="bg-[url('./images/bodyBg.svg')] bg-repeat py-[72px] px-[1.75rem] grid gap-[3rem] justify-center items-center grid-cols-2">
+        <div>
+            <h3 class="font-semibold">Supercharged analysis & monitoring tools</h3>
+
+            <h1 class="mt-1 text-[#222525] text-[70px] font-bold leading-[84px] !font-sans">
+                Search Engine Optimization Made Easy
+            </h1>
+
+            <form class="flex w-full mt-[2rem]">
+                <div class="relative w-full bg-white rounded-lg border border-[#e2e8f0]">
+                    <input type="text" placeholder="Website URL"
+                        class="w-full px-[1rem] text-xl py-3 focus:outline-[#3182ce] rounded-lg" />
+                </div>
+                <button type="submit"
+                    class="bg-[#FE6100] hover:bg-[#CB4E00] text-white font-bold px-5 rounded-tr-lg rounded-br-lg text-lg">
+                    Checkup
+                </button>
+            </form>
+            <div class="relative inline-block bg-white !h-fit w-fit text-gray-700 mt-4 font-semibold">
+                <div class="absolute left-1 top-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24"
+                        xml:space="preserve" class="h-4 w-4">
+                        <polyline fill="none" points="21,8.5 12,17.5 3,8.5" stroke="#000000" stroke-miterlimit="10"
+                            stroke-width="2" />
+                    </svg>
+                </div>
+
+                <select id="select"
+                    class="block w-full appearance-none shadow-sm relative z-50 bg-transparent focus:outline-none pl-7">
+                    <option value="all" selected="">Check for all sections</option>
+                    <optgroup label="Common SEO issues">
+                        <option value="title-tag">Meta Title Test</option>
+                        <option value="description-tag">Meta Description Test</option>
+                        <option value="google-preview">
+                            Google Search Results Preview Test
+                        </option>
+                        <option value="social-media-meta-tags">
+                            Social Media Meta Tags Test
+                        </option>
+                        <option value="common-keywords">Most Common Keywords Test</option>
+                        <option value="common-keywords-usage">Keywords Usage Test</option>
+                        <option value="keywords-cloud">Keywords Cloud Test</option>
+                        <option value="related-keywords">Related Keywords Test</option>
+                        <option value="competitor-domains">
+                            Competitor Domains Test
+                        </option>
+                        <option value="heading-tags">Heading Tags Test</option>
+                        <option value="robots-txt">Robots.txt Test</option>
+                        <option value="sitemap">Sitemap Test</option>
+                        <option value="url-seo-friendly">SEO Friendly URL Test</option>
+                        <option value="img-alt">Image Alt Test</option>
+                        <option value="image-size">Responsive Image Test</option>
+                        <option value="image-aspect-ratio">
+                            Image Aspect Ratio Test
+                        </option>
+                        <option value="inline-css">Inline CSS Test</option>
+                        <option value="deprecated-tags">Deprecated HTML Tags Test</option>
+                        <option value="google-analytics">Google Analytics Test</option>
+                        <option value="favicon">Favicon Test</option>
+                        <option value="backlinks">Backlinks Test</option>
+                        <option value="js-errors">JS Error Test</option>
+                        <option value="console-errors">Console Errors Test</option>
+                        <option value="meta-charset">Charset Declaration Test</option>
+                        <option value="social-media">Social Media Test</option>
+                    </optgroup>
+                    <optgroup label="Speed optimizations">
+                        <option value="html-size">HTML Page Size Test</option>
+                        <option value="dom-size">DOM Size Test</option>
+                        <option value="html-compression">
+                            HTML Compression/GZIP Test
+                        </option>
+                        <option value="loading-speed">Site Loading Speed Test</option>
+                        <option value="js-execution-time">JS Execution Time Test</option>
+                        <option value="page-objects">Page Objects Test</option>
+                        <option value="page-cache">
+                            Page Cache Test (Server Side Caching)
+                        </option>
+                        <option value="flash">Flash Test</option>
+                        <option value="cdn-usage">CDN Usage Test</option>
+                        <option value="next-gen-image-format">
+                            Modern Image Format Test
+                        </option>
+                        <option value="img-metadata">Image Metadata Test</option>
+                        <option value="image-caching">Image Caching Test</option>
+                        <option value="js-caching">JavaScript Caching Test</option>
+                        <option value="css-caching">CSS Caching Test</option>
+                        <option value="js-minification">
+                            JavaScript Minification Test
+                        </option>
+                        <option value="css-minification">CSS Minification Test</option>
+                        <option value="render-blocking-resources">
+                            Render Blocking Resources Test
+                        </option>
+                        <option value="nested-tables">Nested Tables Test</option>
+                        <option value="frameset">Frameset Test</option>
+                        <option value="doctype">Doctype Test</option>
+                        <option value="http-redirects">URL Redirects Test</option>
+                        <option value="web-vitals-ttfb">Time To First Byte Test</option>
+                        <option value="web-vitals-fcp">
+                            First Contentful Paint Test
+                        </option>
+                        <option value="web-vitals-lcp">
+                            Largest Contentful Paint Test
+                        </option>
+                        <option value="web-vitals-cls">
+                            Cumulative Layout Shift Test
+                        </option>
+                    </optgroup>
+                    <optgroup label="Server and security">
+                        <option value="url-canonicalization">
+                            URL Canonicalization Test
+                        </option>
+                        <option value="https-encryption">
+                            SSL Checker and HTTPS Test
+                        </option>
+                        <option value="mixed-content-type">
+                            Mixed Content Test (HTTP over HTTPS)
+                        </option>
+                        <option value="http2">HTTP2 Test</option>
+                        <option value="hsts">HSTS Test</option>
+                        <option value="safe-browsing">Safe Browsing Test</option>
+                        <option value="server-signature">Server Signature Test</option>
+                        <option value="directory-browsing">
+                            Directory Browsing Test
+                        </option>
+                        <option value="plaintext-emails">Plaintext Emails Test</option>
+                        <option value="cross-origin-links">
+                            Unsafe Cross-Origin Links Test
+                        </option>
+                    </optgroup>
+                    <optgroup label="Mobile usability">
+                        <option value="viewport">Meta Viewport Test</option>
+                        <option value="media-queries">Media Query Responsive Test</option>
+                        <option value="mobile-snapshot">Mobile Snapshot Test</option>
+                    </optgroup>
+                    <optgroup label="Advanced SEO">
+                        <option value="structured-data">Structured Data Test</option>
+                        <option value="custom-404">Custom 404 Error Page Test</option>
+                        <option value="noindex-tags">Noindex Tag Test</option>
+                        <option value="canonical-tags">Canonical Tag Test</option>
+                        <option value="nofollow-tags">Nofollow Tag Test</option>
+                        <option value="disallow-tags">Disallow Directive Test</option>
+                        <option value="meta-refresh">Meta Refresh Test</option>
+                        <option value="spf-record">SPF Records Test</option>
+                        <option value="ads-txt">Ads.txt Validation Test</option>
+                        <option value="spell-checker">Spell Check Test</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <p class="mt-6 text-lg leading-[1.5] font-semibold text-[#222525] w-[90%]">
+                Trusted by over 15,000 webmasters, small business owners & SEO
+                agencies in over 120 countries.
+            </p>
+        </div>
+
+        <div>
+            <video controls="" preload="none" poster="./images/ssc_video_thumbnail.jpeg"
+                src="./videos/seo-site-checkup-promo.mp4" title="SEO Site Checkup makes search engine optimization easy"
+                class="">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </section>
+
+    <section class="py-[72px] px-[1.75rem] bg-[#FDEFE6] w-full">
+        <div class="w-fit mx-auto text-center">
+            <h3 class="font-semibold">Tons of great features</h3>
+            <h1 class="mt-3 font-semibold text-5xl text-[#222525]">
+                Introducing our SEO ToolBox
+            </h1>
+        </div>
+
+        <div class="grid grid-cols-3 grid-rows-2 mt-[0.75rem]">
+            <div class="p-[2.25rem]">
+                <img src="./images/seoToolbox/0.svg" alt="Instantly analyze your SEO issues" class="mx-auto" />
+                <h3 class="text-center mx-auto w-[90%] mt-2 text-2xl text-[#222525] font-semibold">
+                    Instantly analyze your SEO issues
+                </h3>
+                <p class="text-[#222525] text-center mt-3 font-semibold">
+                    Run unlimited analysis on our most powerful servers. Stored reports
+                    make it easy to view progress and past work.
+                </p>
+            </div>
+            <div class="p-[2.25rem]">
+                <img src="./images/seoToolbox/1.svg" alt="Professional SEO monitoring tools" class="mx-auto" />
+                <h3 class="text-center mx-auto w-[90%] mt-2 text-2xl text-[#222525] font-semibold">
+                    Professional SEO monitoring tools
+                </h3>
+                <p class="text-[#222525] text-center mt-3 font-semibold">
+                    Automatically keep track of weekly changes in more than 30 SEO
+                    variables. Get notifications if your SEO score changes.
+                </p>
+            </div>
+            <div class="p-[2.25rem]">
+                <img src="./images/seoToolbox/2.svg" alt="Understand your competitors' SEO profile" class="mx-auto" />
+                <h3 class="text-center mx-auto w-[90%] mt-2 text-2xl text-[#222525] font-semibold">
+                    Understand your competitors' SEO profile
+                </h3>
+                <p class="text-[#222525] text-center mt-3 font-semibold">
+                    Side-by-side SEO comparisons of up to 5 competitors. See how your
+                    SEO can improve against the competition.
+                </p>
+            </div>
+            <div class="p-[2.25rem]">
+                <img src="./images/seoToolbox/3.svg" alt="Save hours with white-label SEO reports" class="mx-auto" />
+                <h3 class="text-center mx-auto w-[90%] mt-2 text-2xl text-[#222525] font-semibold">
+                    Save hours with white-label SEO reports
+                </h3>
+                <p class="text-[#222525] text-center mt-3 font-semibold">
+                    Quickly create editable SEO reports for your clients or partner
+                    websites.
+                </p>
+            </div>
+            <div class="p-[2.25rem]">
+                <img src="./images/seoToolbox/4.svg" alt="SEO reports you can understand and act upon' SEO profile"
+                    class="mx-auto" />
+                <h3 class="text-center mx-auto w-[90%] mt-2 text-2xl text-[#222525] font-semibold">
+                    SEO reports you can understand and act upon' SEO profile
+                </h3>
+                <p class="text-[#222525] text-center mt-3 font-semibold">
+                    SEO broken down in plain language, with clear definitions and
+                    'how-to-fix' tutorials for each issue.
+                </p>
+            </div>
+            <div class="p-[2.25rem]">
+                <img src="./images/seoToolbox/5.svg" alt="7-Day free trial, cancel anytime!" class="mx-auto" />
+                <h3 class="text-center mx-auto w-[90%] mt-2 text-2xl text-[#222525] font-semibold">
+                    7-Day free trial, cancel anytime!
+                </h3>
+                <p class="text-[#222525] text-center mt-3 font-semibold">
+                    Get started right away by registering below. Plans start at $29.95
+                    per month.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-center">
+            <button class="font-semibold text-lg text-white px-6 py-2 bg-[#FE6100] rounded-lg">
+                Start My Free Trial
+            </button>
+        </div>
+    </section>
+
+    <section class="py-[72px] mx-auto">
+        <p id="tab-content" class="text-5xl text-center font-bold max-w-[720px] mx-auto leading-[1.2] mb-[.5rem]">
+            "SEO Site Checkup runs through a fast audit of your site, checking for proper tags and surfacing any errors
+            that might come up."
+        </p>
+        <div role="tablist" aria-orientation="horizontal" class="flex justify-center mt-10 gap-20 items-center">
+            <button type="button" id="tab1" class="border-t-4 border-t-black pt-2" onclick="changeTab(1)">
+                <img src="https://imgix.cosmicjs.com/75293990-596f-11eb-a19e-83607d9500e5-5fbfa32b4a77e53da5f4e850logo-buffer.svg"
+                    loading="lazy" alt="logo" />
+            </button>
+
+            <button type="button" id="tab2" class="opacity-[0.24] pt-2" onclick="changeTab(2)">
+                <img src="https://imgix.cosmicjs.com/7529d5d0-596f-11eb-a19e-83607d9500e5-5fbfa32eb30cf91f15760df5logo-huffpost.svg"
+                    loading="lazy" alt="logo" />
+            </button>
+
+            <button type="button" id="tab3" class="opacity-[0.24] pt-2" onclick="changeTab(3)">
+                <img src="https://imgix.cosmicjs.com/750b0330-596f-11eb-a19e-83607d9500e5-5fbfa32c7c628308d4ac5acelogo-groove.svg"
+                    loading="lazy" alt="logo" />
+            </button>
+        </div>
+    </section>
+
+    <section class="py-[72px] px-[1.75rem] bg-[#F8F6F4] grid grid-cols-2 items-center gap-[3rem]">
+
+        <div><img src="./images/upliftBusiness.avif" alt="upliftBusiness" class="w-full h-auto"></div>
+
+        <div>
+            <h1 class="text-[#222525] text-5xl font-bold leading-[1.2] mb-[0.75rem]">Everything you need to uplift your
+                business</h1>
+
+            <div class="my-[2.25rem]">
+
+                <div class="text-[#222525] font-bold pb-[0.5rem]">SEO doesn't need to be difficult</div>
+                <p class="text-[#62636b] mb-4">We provide a set of SEO tools to help you understand your website from a
+                    search engine's
+                    perspective.
+                </p>
+
+                <div class="mb-[1.5rem] mt-[2.5rem] h-auto w-auto border-[#ecebea] border"></div>
+
+                <div class="text-[#222525] font-bold pb-[0.5rem]">Know when to act and improve</div>
+                <p class="text-[#62636b] mb-4">
+                    Our SEO reports also let you know of any problems or technical shortcomings in your websitethat
+                    may be hurting your search engine rankings.
+                </p>
+
+                <div class="mb-[1.5rem] mt-[2.5rem] h-auto w-auto border-[#ecebea] border"></div>
+
+                <div class="text-[#222525] font-bold pb-[0.5rem]">Dedicated team of SEO professionals</div>
+                <p class="text-[#62636b] mb-4">
+                    We've seen how algorithms, penalties and SEO factors have evolved since the early days of search. As
+                    SEO professionals and site owners, we know first-hand where webmasters need to focus and spend their
+                    time.
+                </p>
+            </div>
+
+
+            <button
+                class="bg-[#FE6100] hover:bg-[#CB4E00] text-white px-6 py-2 font-bold text-lg capitalize mt-3 rounded-lg">I'm
+                ready for a free trial</button>
+        </div>
+
+    </section>
+
+    <section class="bg-[#001E42] py-[72px] px-[1.75rem]">
+
+        <h3
+            class="text-4xl tracking-wider leading-[1.2] font-bold text-white mb-[4rem] max-w-[700px] mx-auto text-center">
+            Conveying trust by numbers is our way to do business. Is it yours too?
+        </h3>
+
+        <div class="grid grid-cols-3 gap-y-6 text-white text-center">
+            <div class="px-[2.25rem]">
+                <div class="text-[54px] font-bold leading-[1.2] mb-[0.75rem]">25.5M+</div>
+                <p class="mb-4">Unique URLs checked<br>in over 11 years</p>
+            </div>
+            <div class="px-[2.25rem]">
+                <div class="text-[54px] font-bold leading-[1.2] mb-[0.75rem]">85,000+</div>
+                <p class="mb-4">Happy customers<br>all over the world</p>
+            </div>
+            <div class="px-[2.25rem]">
+                <div class="text-[54px] font-bold leading-[1.2] mb-[0.75rem]">120+</div>
+                <p class="mb-4">Countries served with<br>better SEO Services</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-[#F8F6F4] py-[72px] px-[1.75rem] grid grid-cols-2 gap-12 items-center">
+        <div>
+            <div class="max-w-[400px] text-[54px] font-bold leading-[1.2] mb-[1.5rem]">They use us to create great
+                experiences.</div>
+            <div class="max-w-[380px] mb-[2.25rem]">
+                <p class="mb-4 font-semibold">
+                    "Join over 85,000 SEO professionals and agencies in getting your website's SEO up to the latest
+                    standards."
+                </p>
+            </div>
+            <button class="font-semibold text-lg text-white px-6 py-2 bg-[#FE6100] rounded-lg">
+                Start My Free Trial
+            </button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-6 gap-y-0">
+            <div class="inline-block bg-white !h-fit w-full rounded-[.5rem] mb-[1.5rem] px-[1.5rem] py-[1rem]">
+                <div class="flex items-center">
+                    <span
+                        class="bg-[#42b5a5] rounded-full inline-flex items-center justify-center text-center uppercase relative shrink-0 text-[#1A202C] border border-white text-[calc(3rem/2.5)] w-[3rem] h-[3rem] leading-[3rem] font-semibold">MF</span>
+                    <div class="text-[14px] ml-[0.75rem]">
+                        <strong class="font-bold">Matt Fenell</strong>
+                        <div class="opacity-[0.5]"></div>
+                    </div>
+                </div>
+                <div class="mt-[1.5rem] text-[14px]">
+                    <p class="mb-4 font-semibold">
+                        Your online tool has been a great help, especially with being able to download results as a
+                        PDF. Your help is very much appreciated, and thank you again for the amazing online tool.
+                    </p>
+                </div>
+            </div>
+            <div class="inline-block bg-white !h-fit w-full rounded-[.5rem] mb-[1.5rem] px-[1.5rem] py-[1rem]">
+                <div class="flex items-center">
+                    <span
+                        class="bg-[#3D9D49] rounded-full inline-flex items-center justify-center text-center uppercase relative shrink-0 text-[#1A202C] border border-white text-[calc(3rem/2.5)] w-[3rem] h-[3rem] leading-[3rem] font-semibold text-white">J</span>
+                    <div class="text-[14px] ml-[0.75rem]">
+                        <strong class="font-bold">Julie</strong>
+                        <div class="opacity-[0.5]"></div>
+                    </div>
+                </div>
+                <div class="mt-[1.5rem] text-[14px]">
+                    <p class="mb-4 font-semibold px-px">
+                        We wanted to let you know that we included your SEO tool in our definitive list of 215 SEO
+                        apps, platforms, and tools. Thanks so much for sharing your valuable tool with the community!
+                    </p>
+                </div>
+            </div>
+
+            <div class="inline-block bg-white !h-fit w-full rounded-[.5rem] mb-[1.5rem] px-[1.5rem] py-[1rem]">
+                <div class="flex items-center">
+                    <span
+                        class="bg-[#B5F3BA] rounded-full inline-flex items-center justify-center text-center uppercase relative shrink-0 text-[#1A202C] border border-white text-[calc(3rem/2.5)] w-[3rem] h-[3rem] leading-[3rem] font-semibold">EP</span>
+                    <div class="text-[14px] ml-[0.75rem]">
+                        <strong class="font-bold">Erik Picasso Rogers</strong>
+                        <div class="opacity-[0.5]"></div>
+                    </div>
+                </div>
+                <div class="mt-[1.5rem] text-[14px]">
+                    <p class="mb-4 font-semibold">
+                        I'm fond of this tool. I'm most impressed by the fact that it houses a bunch of useful
+                        tools/actions under a single roof whereas I'd normally have to visit a couple of different sites
+                        to get; I will definitely keep using it and look forward to see what benefits your plan upgrades
+                        come with.
+                    </p>
+                </div>
+            </div>
+            <div class="inline-block bg-white !h-fit w-full rounded-[.5rem] mb-[1.5rem] px-[1.5rem] py-[1rem]">
+                <div class="flex items-center">
+                    <span
+                        class="rounded-full inline-flex items-center justify-center text-center uppercase relative shrink-0 text-[#1A202C] border border-white text-[calc(3rem/2.5)] w-[3rem] h-[3rem] leading-[3rem] font-semibold">
+                        <img src="https://imgix.cosmicjs.com/ff4923a0-5993-11eb-a19e-83607d9500e5-guy-shitrit.png?q=&auto=compress,format,&w=48&h=48"
+                            alt="img" class="w-full h-full object-cover rounded-full">
+                    </span>
+                    <div class="text-[14px] ml-[0.75rem]">
+                        <strong class="font-bold">Guy S.</strong>
+                        <div class="opacity-[0.5]"></div>
+                    </div>
+                </div>
+                <div class="mt-[1.5rem] text-[14px]">
+                    <p class="mb-4 font-semibold">
+                        I am a ultimate member and been since you guys started. LOVE your service, so ride on. You guys
+                        truly are amazing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="py-[72px] px-[1.75rem] grid grid-cols-2 gap-12 items-center border-[#E2E8F0] border-b">
+            <div>
+                <h3 class="font-semibold">Enjoy your Dashboard</h3>
+                <div class="max-w-[500px] text-[54px] font-bold leading-[1.2] mb-[1.5rem] mt-2">Everything you need in
+                    one
+                    place</div>
+                <p class="mt-4 font-semibold max-w-[480px]">All of the tools right at your fingertips. With one quick
+                    click,
+                    you can see how your site is doing. The dashboard offers instant access to reports, monitors, and
+                    analysis tools.</p>
+                <button class="font-semibold text-lg text-white px-6 py-[10px] bg-[#FE6100] rounded-lg mt-8">
+                    Start Free Trial
+                </button>
+            </div>
+            <div>
+                <img src="./images/dashboard/enjoy.avif" alt="enjoy" class="w-full h-auto boxShadow rounded">
+            </div>
+        </div>
+        <div class="py-[72px] px-[1.75rem] grid grid-cols-2 gap-12 items-center border-[#E2E8F0] border-b">
+            <div>
+                <h3 class="font-semibold">Beat your competition</h3>
+                <div class="max-w-[500px] text-[54px] font-bold leading-[1.2] mb-[1.5rem] mt-2">Analyze your competitors
+                    strategy</div>
+                <p class="mt-4 font-semibold max-w-[480px]">A strategic tool that analyzes SEO metrics of different
+                    URLs, providing important information about your competition. Some of the parameters that are taken
+                    into account are:</p>
+                <div class="grid grid-cols-2 gap-[1.5rem] my-[2.25rem]">
+                    <div class="flex font-bold w-full items-center">
+                        <svg viewBox="0 0 24 24" focusable="false"
+                            class="inline-block leading-[1em] shrink-0 text-[#fe6100] align-middle h-[1.5rem] w-[1.5rem] mr-[0.75rem] bg-white rounded-full">
+                            <path fill="currentColor"
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Common SEO issues</strong>
+                    </div>
+                    <div class="flex font-bold w-full items-center">
+                        <svg viewBox="0 0 24 24" focusable="false"
+                            class="inline-block leading-[1em] shrink-0 text-[#fe6100] align-middle h-[1.5rem] w-[1.5rem] mr-[0.75rem] bg-white rounded-full">
+                            <path fill="currentColor"
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Speed Optimizations</strong>
+                    </div>
+                    <div class="flex font-bold w-full items-center">
+                        <svg viewBox="0 0 24 24" focusable="false"
+                            class="inline-block leading-[1em] shrink-0 text-[#fe6100] align-middle h-[1.5rem] w-[1.5rem] mr-[0.75rem] bg-white rounded-full">
+                            <path fill="currentColor"
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Server & Security</strong>
+                    </div>
+                    <div class="flex font-bold w-full items-center">
+                        <svg viewBox="0 0 24 24" focusable="false"
+                            class="inline-block leading-[1em] shrink-0 text-[#fe6100] align-middle h-[1.5rem] w-[1.5rem] mr-[0.75rem] bg-white rounded-full">
+                            <path fill="currentColor"
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Mobile Usability</strong>
+                    </div>
+                </div>
+                <button class="font-semibold text-lg text-white px-6 py-[10px] bg-[#FE6100] rounded-lg ">
+                    Start Free Trial
+                </button>
+            </div>
+            <div>
+                <img src="./images/dashboard/beat.avif" alt="beat" class="w-full h-auto boxShadow rounded">
+            </div>
+        </div>
+        <div class="py-[72px] px-[1.75rem] grid grid-cols-2 gap-12 items-center border-[#E2E8F0] border-b">
+            <div>
+                <h3 class="font-semibold">Let us do the work</h3>
+                <div class="max-w-[500px] text-[54px] font-bold leading-[1.2] mb-[1.5rem] mt-2">Create automated
+                    checkups</div>
+                <p class="mt-4 font-semibold max-w-[480px]">Get a quick overview of your sites load speed, and uptime
+                    with built-in automation tools. Website monitoring and site load speed features offer a one-step
+                    tool to create automation processes for specific time intervals.</p>
+                <button class="font-semibold text-lg text-white px-6 py-[10px] bg-[#FE6100] rounded-lg mt-8">
+                    Start Free Trial
+                </button>
+            </div>
+            <div>
+                <img src="./images/dashboard/checkups.avif" alt="checkups" class="w-full h-auto boxShadow rounded">
+            </div>
+        </div>
+        <div class="py-[72px] px-[1.75rem] grid grid-cols-2 gap-12 items-center border-[#E2E8F0] border-b">
+            <div>
+                <h3 class="font-semibold">Impress your clients</h3>
+                <div class="max-w-[500px] text-[54px] font-bold leading-[1.2] mb-[1.5rem] mt-2">Custom branded SEO
+                    reports</div>
+                <p class="mt-4 font-semibold max-w-[480px]">Provide professional SEO reports for your clients. General
+                    SEO reports, specific SEO reports, and even white label SEO reports are easily generated for your
+                    clients in one convenient place.</p>
+                <button class="font-semibold text-lg text-white px-6 py-[10px] bg-[#FE6100] rounded-lg mt-8">
+                    Start Free Trial
+                </button>
+            </div>
+            <div>
+                <img src="./images/dashboard/reports.avif" alt="reports" class="w-full h-auto boxShadow rounded">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F8F6F4] py-[72px] px-[1.75rem] grid grid-cols-2 items-center gap-[3rem] justify-center">
+        <div class="max-w-[506px] w-full mx-auto">
+            <div class="text-[54px] leading-[1.2] font-bold mb-[0.5rem]">Why wait? Boost your website’s SEO right now!
+            </div>
+            <h2 class="text-[24px] leading-[1.45] text-[#62636b] mb[1rem]">Analyze and monitor your SEO with our
+                powerful SEO ToolBox.</h2>
+            <form class="mt-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                    <!-- First Name -->
+                    <div>
+                        <input type="text" placeholder="First Name"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <!-- Last Name -->
+                    <div>
+                        <input type="text" placeholder="Last Name"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+                <!-- Email Address -->
+                <div class="mb-4">
+                    <input type="email" placeholder="Email Address"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- Password -->
+                <div class="mb-4">
+                    <input type="password" placeholder="Password"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- Repeat Password -->
+                <div class="mb-4">
+                    <input type="password" placeholder="Repeat Password"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <!-- Checkbox -->
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="terms" class="mr-2 border-gray-300 rounded">
+                    <label for="terms" class="text-gray-700">I agree to the <a href="/terms-of-service"
+                            class="text-orange-600 hover:underline">Terms of Service</a></label>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full bg-orange-300 text-white py-3 rounded-lg font-bold hover:bg-orange-400 transition duration-200">Start
+                    My 7-Day Trial</button>
+            </form>
+
+        </div>
+        <div class="max-w-[506px] w-full mx-auto">
+            <div class="">
+                <ul class="space-y-4">
+                    <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+                        <svg class="h-6 w-6 text-orange-500 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Complete Website Analysis</strong>
+                    </li>
+                    <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+                        <svg class="h-6 w-6 text-orange-500 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Website Monitoring</strong>
+                    </li>
+                    <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+                        <svg class="h-6 w-6 text-orange-500 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Track Your Site's Loading Speed</strong>
+                    </li>
+                    <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+                        <svg class="h-6 w-6 text-orange-500 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Easy Sitemap Generator</strong>
+                    </li>
+                    <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+                        <svg class="h-6 w-6 text-orange-500 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Detect Broken Links</strong>
+                    </li>
+                    <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+                        <svg class="h-6 w-6 text-orange-500 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>White Label Reports</strong>
+                    </li>
+                    <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+                        <svg class="h-6 w-6 text-orange-500 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
+                            </path>
+                        </svg>
+                        <strong>Technical Support</strong>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

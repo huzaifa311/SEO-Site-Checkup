@@ -1,0 +1,12 @@
+@font-face {
+    font-family: DmSans;
+    src: url(fonts/DMSans-Regular.ttf);
+}
+
+body {
+    font-family: DmSans, sans-serif;
+}
+
+.boxShadow{
+    box-shadow: 16px 0 100px 7px rgba(98, 99, 107, 0.24);
+}
