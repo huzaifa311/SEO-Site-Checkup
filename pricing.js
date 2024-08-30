@@ -47,3 +47,21 @@ function changeTab(tabNumber) {
     document.getElementById('tab1').classList.toggle('bg-white', tabNumber !== 1);
     document.getElementById('tab1').classList.toggle('text-[#FE6100]', tabNumber !== 1);
 }
+
+window.addEventListener('scroll', function () {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    const heroSectionHeight = document.querySelector('#hero-section').offsetHeight;
+
+    if (window.scrollY > heroSectionHeight) {
+        scrollToTopBtn.style.display = 'inline';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+
+document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

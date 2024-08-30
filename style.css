@@ -7,10 +7,14 @@ body {
     font-family: DmSans, sans-serif;
 }
 
-.boxShadow{
+.boxShadow {
     box-shadow: 16px 0 100px 7px rgba(98, 99, 107, 0.24);
 }
 
-.grid-rows-masonry{
+.shadowHover:hover {
+    box-shadow: 14px 14px 30px 3px #e0e0e0;
+}
+
+.grid-rows-masonry {
     grid-template-rows: masonry !important;
 }
