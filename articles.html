@@ -13,12 +13,14 @@
 
 <body>
     <header class="flex justify-between items-center text-[16px] px-6 py-4 bg-white font-semibold text-[#222525]">
-        <div class="flex gap-12 ">
-            <img src="./images/logo.svg" alt="Logo">
+        <div class="flex gap-12">
+            <a href="./index.html">
+                <img src="./images/logo.svg" alt="Logo" />
+            </a>
             <div class="flex items-center gap-6 pt-2">
-                <a class="hover:text-[#fe6100] cursor-pointer">Pricing</a>
-                <a class="hover:text-[#fe6100] cursor-pointer">Free Tools</a>
-                <a class="hover:text-[#fe6100] cursor-pointer">Articles</a>
+                <a href="./pricing.html" class="hover:text-[#fe6100] cursor-pointer">Pricing</a>
+                <a href="./freeTools.html" class="hover:text-[#fe6100] cursor-pointer">Free Tools</a>
+                <a href="./articles.html" class="hover:text-[#fe6100] cursor-pointer">Articles</a>
             </div>
         </div>
         <div class="flex gap-5 items-center">
@@ -153,28 +155,31 @@
 
 
     </section>
-    <footer class="bg-[#001E42] py-[72px]">
-        <div class="grid grid-cols-2 !items-start px-[2.75rem]">
+    <footer class="bg-[#001E42] py-[50px]">
+        <div class="grid grid-cols-2 !items-center px-[3rem]">
             <h1 class="text-[32px] text-white max-w-[70%] leading-[1.2] font-bold mb-[0.75rem]">
                 Check your website's SEO for free right now!
             </h1>
-            <form class="flex w-full max-w-[50%] ml-auto">
-                <div class="relative w-full bg-white rounded-lg border border-[#e2e8f0]">
+            <form class="flex w-full max-w-[56%] ml-auto">
+                <div
+                    class="relative w-full bg-white rounded-tl-md rounded-bl-md overflow-hidden focus:!outline-blue-400 focus:!outline focus:outline-3">
                     <input type="text" placeholder="Website URL"
-                        class="w-full px-[1rem] text-xl py-3 focus:outline-[#3182ce] rounded-lg" />
+                        class="w-full px-[1rem] text-lg py-3 focus:outline-none" />
                 </div>
                 <button type="submit"
-                    class="bg-[#FE6100] hover:bg-[#CB4E00] text-white font-bold px-5 rounded-tr-lg rounded-br-lg text-lg">
+                    class="bg-[#FE6100] hover:bg-[#CB4E00] text-white font-bold px-5 text-lg rounded-tr-md rounded-br-md">
                     Checkup
                 </button>
             </form>
         </div>
 
-        <div class="border-b border-b-[#E2E8F0] my-16 opacity-[0.2]"></div>
+        <div class="border-b border-b-[#E2E8F0] my-12 opacity-[0.2]"></div>
 
-        <div class="grid grid-cols-2 !items-start px-[2.75rem]">
+        <div class="grid grid-cols-2 !items-start px-[3rem]">
             <div>
-                <img src="./images/logo-white.svg" alt="logo-white" class="h-[38px] ">
+                <a href="./index.html">
+                    <img src="./images/logo-white.svg" alt="logo-white" class="h-[38px] ">
+                </a>
                 <p class="max-w-[294px] my-[1.5rem] text-white text-[18px] font-bold">
                     Website SEO, Monitoring & Automation Made Easy.
                 </p>
@@ -201,18 +206,18 @@
                 <div class="">
                     <div class="font-bold leading-[1.5] mb-[0.5rem] text-white">Product</div>
                     <ul role="list" class="text-white">
-                        <li class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white">Pricing</li>
-                        <li class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]">Free
-                            Tools
+                        <li class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"><a
+                                href="./pricing.html">Pricing</a></li>
+                        <li class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]"><a
+                                href="./freeTools.html">Free Tools</a>
                         </li>
-                        <li class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]">
-                            Articles
+                        <li class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]"><a
+                                href="./articles.html">Articles</a>
                         </li>
 
                         <li class="mt-[0.5rem]">
                             <div class="inline-flex">
-                                <div class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white">Login
-                                </div>
+                                <div class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white">Login</div>
                             </div>
                         </li>
                         <li class="mt-[0.5rem]">
@@ -226,42 +231,59 @@
                 <div class="ml-[1em]">
                     <div class="font-bold leading-[1.5] mb-[0.5rem] text-white">Company</div>
                     <ul role="list" class="text-white">
-                        <a href="./aboutus.html"
-                            class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white">About us</a>
-                        <a href="./faq.html"
-                            class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]">FAQs</a>
-                        <a href="./seoCheckup.html"
-                            class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]">SEO
-                            Checkups
-                        </a>
-                        <a href="./seoCheckup.html"
-                            class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]">SEO
-                            Contact
-                        </a>
+                        <div>
+                            <a href="./aboutus.html"
+                                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white">About us</a>
+                        </div>
+                        <div class="mt-[0.5rem]">
+                            <a href="./faq.html"
+                                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white ">FAQs</a>
+                        </div>
+                        <div class="mt-[0.5rem]">
+                            <a href="./seoCheckup.html"
+                                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white ">SEO
+                                Checkups
+                            </a>
+                        </div>
+                        <div class="mt-[0.5rem]">
+                            <a href="./contact.html"
+                                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white ">SEO
+                                Contact
+                            </a>
+                        </div>
                     </ul>
                 </div>
                 <div class="ml-[1em]">
                     <div class="font-bold leading-[1.5] mb-[0.5rem] text-white">Legal</div>
                     <ul role="list" class="text-white">
-                        <a href="./temsAndServices.html"
-                            class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white">Terms of
-                            Service</a>
-                        <a href="./privacypolicy.html"
-                            class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]">Privacy
-                            Policy</a>
-                        <a href="./refundpolicy.html"
-                            class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]">Refunds
-                            Policy</a>
+                        <div>
+
+                            <a href="./temsAndServices.html"
+                                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white">Terms of
+                                Service</a>
+                        </div>
+                        <div class="mt-[0.5rem]">
+
+                            <a href="./privacypolicy.html"
+                                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white ">Privacy
+                                Policy</a>
+                        </div>
+                        <div class="mt-[0.5rem]">
+
+                            <a href="./refundpolicy.html"
+                                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white ">Refunds
+                                Policy</a>
+                        </div>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="pl-[2.75rem] text-white mt-[5rem]">© SEO Site Checkup 2020-2024 • All rights reserved</div>
+        <div class="pl-[3rem] text-white mt-[5rem]">© SEO Site Checkup 2020-2024 • All rights reserved</div>
     </footer>
 
     <button id="scrollToTopBtn"
-        class="bg-[#FE6100] w-12 h-12 p-2 right-2 bottom-6 fixed rounded-full flex justify-center items-center text-white"
+        class="bg-[#FE6100] w-12 h-12 p-2 right-6 bottom-6 fixed rounded-full flex justify-center items-center text-white"
         style="display: none;">
         <svg viewBox="0 0 24 24" focusable="false" class="rotate-180" aria-hidden="true">
             <path fill="currentColor" d="M12 16l-6-6 1.41-1.41L12 13.17l4.59-4.58L18 10z"></path>
