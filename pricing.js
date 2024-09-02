@@ -1,5 +1,5 @@
 function changeTab(tabNumber) {
-    if (tabNumber === 0) {  // Monthly Pricing
+    if (tabNumber === 0) {
         document.getElementById('professionalPrice').innerHTML = `
             <div class="text-[24px] leading-[1.45]">$</div>
             <div class="text-[54px] font-bold mb-[0.75rem] leading-[0.9] pl-[0.25rem]">89.95</div>
@@ -17,7 +17,7 @@ function changeTab(tabNumber) {
             <div class="text-[54px] font-bold mb-[0.75rem] leading-[0.9] pl-[0.25rem]">29.95</div>
             <div class="text-[24px] leading-[1.45]">/mo</div>`;
         document.getElementById('basicBilling').innerHTML = `$29.95/mo billed yearly, save 10%`;
-    } else if (tabNumber === 1) {  // Yearly Pricing
+    } else if (tabNumber === 1) {
         document.getElementById('professionalPrice').innerHTML = `
             <div class="text-[24px] leading-[1.45]">$</div>
             <div class="text-[54px] font-bold mb-[0.75rem] leading-[0.9] pl-[0.25rem]">80.95</div>
