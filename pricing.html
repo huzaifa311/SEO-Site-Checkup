@@ -1,374 +1,1488 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing | SEO Site Checkup</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-    <header class="flex justify-between items-center text-[16px] px-6 py-4 bg-white font-semibold text-[#222525]">
-        <div class="flex gap-12">
-            <a href="./index.html">
-                <img src="./images/logo.svg" alt="Logo" />
-            </a>
-            <div class="flex items-center gap-6 pt-2">
-                <a href="./pricing.html" class="hover:text-[#fe6100] cursor-pointer">Pricing</a>
-                <a class="hover:text-[#fe6100] cursor-pointer">Free Tools</a>
-                <a class="hover:text-[#fe6100] cursor-pointer">Articles</a>
-            </div>
+  <body>
+    <header
+      class="flex justify-between items-center text-[16px] px-6 py-4 bg-white font-semibold text-[#222525]"
+    >
+      <div class="flex gap-12">
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="Logo" />
+        </a>
+        <div class="flex items-center gap-6 pt-2">
+          <a href="./pricing.html" class="text-[#fe6100] cursor-pointer"
+            >Pricing</a
+          >
+          <a href="./freeTools.html" class="hover:text-[#fe6100] cursor-pointer"
+            >Free Tools</a
+          >
+          <a class="hover:text-[#fe6100] cursor-pointer">Articles</a>
         </div>
-        <div class="flex gap-5 items-center">
-            <a class="px-3 py-1 border border-[#e2e8f0] rounded-lg">Log In</a>
-            <a class="px-3 py-1 bg-[#fe6100] text-white rounded-lg">Start Free Trial</a>
-        </div>
+      </div>
+      <div class="flex gap-5 items-center">
+        <a class="px-3 py-1 border border-[#e2e8f0] rounded-lg">Log In</a>
+        <a class="px-3 py-1 bg-[#fe6100] text-white rounded-lg"
+          >Start Free Trial</a
+        >
+      </div>
     </header>
 
-    <section class="bg-white flex justify-center items-center py-[72px] px-[1.5rem]">
-        <div class="text-center max-w-[720px]">
-            <div class="font-bold leading-[1.5">Pricing Plans</div>
-            <h1 class="text-[54px] font-bold leading-[1.2] mb-[0.75rem] text-[#222525] tracking-wide">A plan for all
-                businesses.</h1>
-            <div class="text-[18px] leading-[1.75] mb-[0.75rem] font-bold">Instant, Professional SEO Audits & Monitoring
-            </div>
+    <section
+      id="hero-section"
+      class="bg-white flex justify-center items-center py-[72px] px-[1.5rem]"
+    >
+      <div class="text-center max-w-[720px]">
+        <div class="font-bold leading-[1.5">Pricing Plans</div>
+        <h1
+          class="text-[54px] font-bold leading-[1.2] mb-[0.75rem] text-[#222525] tracking-wide"
+        >
+          A plan for all businesses.
+        </h1>
+        <div class="text-[18px] leading-[1.75] mb-[0.75rem] font-bold">
+          Instant, Professional SEO Audits & Monitoring
         </div>
+      </div>
     </section>
 
     <section class="bg-[#F8F6F4] py-[72px] px-[2rem]">
-        <div class="flex mx-auto rounded-full !overflow-hidden w-fit mb-28">
-            <div id="tab0" class="py-[0.5rem] px-[1.75rem] bg-[#FE6100] text-white font-semibold cursor-pointer">Monthly
-            </div>
-            <div id="tab1" class="py-[0.5rem] px-[1.75rem] bg-white text-[#FE6100] font-semibold cursor-pointer">Yearly
-                - Save 10%
-            </div>
+      <div class="flex mx-auto rounded-full !overflow-hidden w-fit mb-16">
+        <div
+          id="tab0"
+          onclick="changeTab(0)"
+          class="py-[0.5rem] px-[1.75rem] bg-[#FE6100] text-white font-semibold cursor-pointer"
+        >
+          Monthly
         </div>
+        <div
+          id="tab1"
+          onclick="changeTab(1)"
+          class="py-[0.5rem] px-[1.75rem] bg-white text-[#FE6100] font-semibold cursor-pointer"
+        >
+          Yearly - Save 10%
+        </div>
+      </div>
 
-        <div class="grid grid-cols-3 gap-[1.75rem] items-end">
-            <div class="bg-white rounded-md flex flex-col relative ">
-                <div class="flex flex-col flex-1 px-[2.25rem] pt-[2.25rem]">
-                    <h3 class="text-[32px] text-[#222525] leading-[1.2] font-bold mb-[0.75rem] text-center">Professional
-                    </h3>
-                    <div class="!items-end flex justify-center w-full my-[1.5rem] text-[#222525]">
-                        <div class="text-[24px] leading-[1.45]">$</div>
-                        <div class="text-[54px] font-bold mb-[0.75rem leading-[0.9] pl-[0.25rem]">89.95</div>
-                        <div class="text-[24px] leading-[1.45]]">/mo</div>
-                    </div>
-                    <div class="text-center text-[#718096] font-medium mb-6">$80.95/mo billed yearly, save 10%</div>
-                    <div class="py-[1.5rem] pr-3 border-y border-y-[#ecebea] font-medium">For larger businesses or SEO
-                        agencies working on multiple projects</div>
-                </div>
-                <div class="flex flex-col space-y-3 mt-2 px-[2.25rem]">
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Unlimited SEO Analysis</p>
-                            <p class="text-[#718096] pt-2 !font-medium">more than 70 factors</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Daily SEO Score Monitoring</p>
-                            <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Competitor SEO Comparisons</p>
-                            <p class="text-[#718096] pt-2 !font-medium">5 competitors</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Keyword Position Tracking</p>
-                            <p class="text-[#718096] pt-2 !font-medium">300 keywords</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Site Uptime Monitoring</p>
-                            <p class="text-[#718096] pt-2 !font-medium">5 Locations</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Site Speed Monitoring</p>
-                            <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Sitemap Generator</p>
-                            <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Broken Link Detector</p>
-                            <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">White Label Reports</p>
-                            <p class="text-[#718096] pt-2 !font-medium">included</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Team</p>
-                            <p class="text-[#718096] pt-2 !font-medium">5 members</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8 px-[2.25rem]">
-                    <button class="w-full text-white text-lg font-semibold bg-[#FE6100] py-[10px] rounded-lg">Start Free
-                        Trial</button>
-                </div>
+      <div class="grid grid-cols-3 gap-[1.75rem] items-end">
+        <div class="bg-white rounded-md flex flex-col relative pb-8">
+          <div class="flex flex-col flex-1 px-[2.25rem] pt-[2.25rem]">
+            <h3
+              class="text-[32px] text-[#222525] leading-[1.2] font-bold mb-[0.75rem] text-center"
+            >
+              Professional
+            </h3>
+            <div
+              id="professionalPrice"
+              class="!items-center flex justify-center w-full my-[1.5rem] text-[#222525]"
+            >
+              <div class="text-[24px] leading-[1.45]">$</div>
+              <div
+                class="text-[54px] font-bold mb-[0.75rem] leading-[0.9] pl-[0.25rem]"
+              >
+                89.95
+              </div>
+              <div class="text-[24px] leading-[1.45]">/mo</div>
             </div>
-            <div class="bg-white rounded-md flex flex-col relative">
-                <div class="flex flex-col flex-1 px-[2.25rem] pt-[2.25rem]">
-                    <h3 class="text-[32px] text-[#222525] leading-[1.2] font-bold mb-[0.75rem] text-center">Webmaster
-                    </h3>
-                    <div class="!items-end flex justify-center w-full my-[1.5rem] text-[#222525]">
-                        <div class="text-[24px] leading-[1.45]">$</div>
-                        <div class="text-[54px] font-bold mb-[0.75rem leading-[0.9] pl-[0.25rem]">49.95</div>
-                        <div class="text-[24px] leading-[1.45]]">/mo</div>
-                    </div>
-                    <div class="text-center text-[#718096] font-medium mb-6">$49.95/mo billed yearly, save 10%</div>
-                    <div class="py-[1.5rem] pr-3 border-y border-y-[#ecebea] font-medium">For growing businesses looking
-                        for best-in-class SEO analysis and monitoring</div>
-                </div>
-                <div class="flex flex-col space-y-3 mt-2 px-[2.25rem]">
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Unlimited SEO Analysis</p>
-                            <p class="text-[#718096] pt-2 !font-medium">more than 70 factors</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Daily SEO Score Monitoring</p>
-                            <p class="text-[#718096] pt-2 !font-medium">5 websites</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Competitor SEO Comparisons</p>
-                            <p class="text-[#718096] pt-2 !font-medium">3 competitors</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Keyword Position Tracking</p>
-                            <p class="text-[#718096] pt-2 !font-medium">100 keywords</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Site Uptime Monitoring</p>
-                            <p class="text-[#718096] pt-2 !font-medium">3 Locations</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Site Speed Monitoring</p>
-                            <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Sitemap Generator</p>
-                            <p class="text-[#718096] pt-2 !font-medium">5 websites</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Broken Link Detector</p>
-                            <p class="text-[#718096] pt-2 !font-medium">5 websites</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">White Label Reports</p>
-                            <p class="text-[#718096] pt-2 !font-medium">included</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start border-b border-b-[#ecebea] pb-2">
-                        <svg viewBox="0 0 14 14" focusable="false"
-                            class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]">
-                            <g fill="currentColor">
-                                <polygon
-                                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039">
-                                </polygon>
-                            </g>
-                        </svg>
-                        <div class="">
-                            <p class="text-[#222525] font-medium">Team</p>
-                            <p class="text-[#718096] pt-2 !font-medium">3 members</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8 px-[2.25rem]">
-                    <button class="w-full text-white text-lg font-semibold bg-[#FE6100] py-[10px] rounded-lg">Start Free
-                        Trial</button>
-                </div>
+            <div
+              id="professionalBilling"
+              class="text-center text-[#718096] font-medium mb-6"
+            >
+              $80.95/mo billed yearly, save 10%
             </div>
+            <div
+              class="py-[1.5rem] pr-3 border-y border-y-[#ecebea] font-medium"
+            >
+              For larger businesses or SEO agencies working on multiple projects
+            </div>
+          </div>
+          <div class="flex flex-col space-y-3 mt-2 px-[2.25rem]">
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Unlimited SEO Analysis</p>
+                <p class="text-[#718096] pt-2 !font-medium">
+                  more than 70 factors
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">
+                  Daily SEO Score Monitoring
+                </p>
+                <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">
+                  Competitor SEO Comparisons
+                </p>
+                <p class="text-[#718096] pt-2 !font-medium">5 competitors</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">
+                  Keyword Position Tracking
+                </p>
+                <p class="text-[#718096] pt-2 !font-medium">300 keywords</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Site Uptime Monitoring</p>
+                <p class="text-[#718096] pt-2 !font-medium">5 Locations</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Site Speed Monitoring</p>
+                <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Sitemap Generator</p>
+                <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Broken Link Detector</p>
+                <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">White Label Reports</p>
+                <p class="text-[#718096] pt-2 !font-medium">included</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Team</p>
+                <p class="text-[#718096] pt-2 !font-medium">5 members</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 px-[2.25rem]">
+            <button
+              class="w-full text-white text-lg font-semibold bg-[#FE6100] py-[10px] rounded-lg"
+            >
+              Start Free Trial
+            </button>
+          </div>
         </div>
+        <div
+          class="bg-white rounded-br-md rounded-bl-md flex flex-col relative pb-8"
+        >
+          <div class="flex flex-col flex-1 px-[2.25rem] pt-[2.25rem]">
+            <h3
+              class="text-[32px] text-[#222525] leading-[1.2] font-bold mb-[0.75rem] text-center"
+            >
+              Webmaster
+            </h3>
+            <div
+              id="webmasterPrice"
+              class="!items-center flex justify-center w-full my-[1.5rem] text-[#222525]"
+            >
+              <div class="text-[24px] leading-[1.45]">$</div>
+              <div
+                class="text-[54px] font-bold mb-[0.75rem] leading-[0.9] pl-[0.25rem]"
+              >
+                49.95
+              </div>
+              <div class="text-[24px] leading-[1.45]">/mo</div>
+            </div>
+            <div
+              id="webmasterBilling"
+              class="text-center text-[#718096] font-medium mb-6"
+            >
+              $49.95/mo billed yearly, save 10%
+            </div>
+            <div
+              class="py-[1.5rem] pr-3 border-y border-y-[#ecebea] font-medium"
+            >
+              For growing businesses looking for best-in-class SEO analysis and
+              monitoring
+            </div>
+          </div>
+          <div class="flex flex-col space-y-3 mt-2 px-[2.25rem]">
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Unlimited SEO Analysis</p>
+                <p class="text-[#718096] pt-2 !font-medium">
+                  more than 70 factors
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">
+                  Daily SEO Score Monitoring
+                </p>
+                <p class="text-[#718096] pt-2 !font-medium">5 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">
+                  Competitor SEO Comparisons
+                </p>
+                <p class="text-[#718096] pt-2 !font-medium">3 competitors</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">
+                  Keyword Position Tracking
+                </p>
+                <p class="text-[#718096] pt-2 !font-medium">100 keywords</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Site Uptime Monitoring</p>
+                <p class="text-[#718096] pt-2 !font-medium">3 Locations</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Site Speed Monitoring</p>
+                <p class="text-[#718096] pt-2 !font-medium">15 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Sitemap Generator</p>
+                <p class="text-[#718096] pt-2 !font-medium">5 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Broken Link Detector</p>
+                <p class="text-[#718096] pt-2 !font-medium">5 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">White Label Reports</p>
+                <p class="text-[#718096] pt-2 !font-medium">included</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Team</p>
+                <p class="text-[#718096] pt-2 !font-medium">3 members</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 px-[2.25rem]">
+            <button
+              class="w-full text-white text-lg font-semibold bg-[#FE6100] py-[10px] rounded-lg"
+            >
+              Start Free Trial
+            </button>
+          </div>
+          <div
+            class="absolute -top-7 left-0 w-full text-center py-[6px] bg-[#FE6100] rounded-tr-md rounded-tl-md text-white font-medium text-sm"
+          >
+            Most Popular
+          </div>
+        </div>
+        <div class="bg-white rounded-md flex flex-col relative pb-8">
+          <div class="flex flex-col flex-1 px-[2.25rem] pt-[2.25rem]">
+            <h3
+              class="text-[32px] text-[#222525] leading-[1.2] font-bold mb-[0.75rem] text-center"
+            >
+              Basic
+            </h3>
+            <div
+              id="basicPrice"
+              class="!items-center flex justify-center w-full my-[1.5rem] text-[#222525]"
+            >
+              <div class="text-[24px] leading-[1.45]">$</div>
+              <div
+                class="text-[54px] font-bold mb-[]0.75rem leading-[0.9] pl-[0.25rem]"
+              >
+                29.95
+              </div>
+              <div class="text-[24px] leading-[1.45]">/mo</div>
+            </div>
+            <div
+              id="basicBilling"
+              class="text-center text-[#718096] font-medium mb-6"
+            >
+              $29.95/mo billed yearly, save 10%
+            </div>
+            <div
+              class="py-[1.5rem] pr-3 border-y border-y-[#ecebea] font-medium"
+            >
+              For new businesses looking to find the key SEO issues
+            </div>
+          </div>
+          <div class="flex flex-col space-y-3 mt-2 px-[2.25rem]">
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Unlimited SEO Analysis</p>
+                <p class="text-[#718096] pt-2 !font-medium">
+                  more than 70 factors
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">
+                  Daily SEO Score Monitoring
+                </p>
+                <p class="text-[#718096] pt-2 !font-medium">3 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">
+                  Competitor SEO Comparisons
+                </p>
+                <p class="text-[#718096] pt-2 !font-medium">1 competitors</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">
+                  Keyword Position Tracking
+                </p>
+                <p class="text-[#718096] pt-2 !font-medium">50 keywords</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Site Uptime Monitoring</p>
+                <p class="text-[#718096] pt-2 !font-medium">1 Locations</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Site Speed Monitoring</p>
+                <p class="text-[#718096] pt-2 !font-medium">3 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Sitemap Generator</p>
+                <p class="text-[#718096] pt-2 !font-medium">3 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 14 14"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-5 h-5 mr-3 text-[#38A169]"
+              >
+                <g fill="currentColor">
+                  <polygon
+                    points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                  ></polygon>
+                </g>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Broken Link Detector</p>
+                <p class="text-[#718096] pt-2 !font-medium">3 websites</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-4 h-4 mr-3 text-[#E53E3E]"
+              >
+                <path
+                  fill="currentColor"
+                  d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
+                ></path>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">White Label Reports</p>
+                <p class="text-[#718096] pt-2 !font-medium">not included</p>
+              </div>
+            </div>
+            <div class="flex items-start border-b border-b-[#ecebea] pb-2">
+              <svg
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="chakra-icon css-1669j6n w-4 h-4 mr-3 text-[#E53E3E]"
+              >
+                <path
+                  fill="currentColor"
+                  d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
+                ></path>
+              </svg>
+              <div class="">
+                <p class="text-[#222525] font-medium">Team</p>
+                <p class="text-[#718096] pt-2 !font-medium">not included</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 px-[2.25rem]">
+            <button
+              class="w-full text-white text-lg font-semibold bg-[#FE6100] py-[10px] rounded-lg"
+            >
+              Start Free Trial
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
 
+    <section class="bg-[#FDEFE6] py-[72px] px-[1.5rem]">
+      <div class="max-w-[720px] text-center w-full mx-auto">
+        <h2 class="text-[48px] leading-[1.2] font-bold mb-[0.75rem]">
+          Our customers love SEO Site Checkup
+        </h2>
+      </div>
+
+      <div class="grid-cols-4 grid-rows-masonry gap-6 grid mt-[2.25rem]">
+        <div
+          class="inline-block w-full rounded-[0.5rem] bg-white px-[1.5rem] py-[1rem] h-fit"
+        >
+          <div class="flex items-center">
+            <span
+              class="bg-[#3d9d49] rounded-full inline-flex items-center justify-center text-center upercase font-medium relative shrink-0 text-white border border-white align-top w-[3rem] h-[3rem] text-[calc(3rem/2.5)]"
+            >
+              <div class="leading-[3rem]">J</div>
+            </span>
+            <div class="text-[14px] ml-[0.75rem]">
+              <strong>Julie</strong>
+              <div class="opacity-[0.5]"></div>
+            </div>
+          </div>
+          <div class="mt-[1.5rem] text-[14px]">
+            <p class="mb-4 font-medium">
+              We wanted to let you know that we included your SEO tool in our
+              definitive list of 215 SEO apps, platforms, and tools. Thanks so
+              much for sharing your valuable tool with the community"
+            </p>
+          </div>
+        </div>
+        <div
+          class="inline-block w-full rounded-[0.5rem] bg-white px-[1.5rem] py-[1rem] h-fit"
+        >
+          <div class="flex items-center">
+            <span
+              class="bg-[#2AE26A] rounded-full inline-flex items-center justify-center text-center upercase font-medium relative shrink-0 text-white border border-white align-top w-[3rem] h-[3rem] text-[calc(3rem/2.5)]"
+            >
+              <div class="leading-[3rem] text-black">M</div>
+            </span>
+            <div class="text-[14px] ml-[0.75rem]">
+              <strong>Marco</strong>
+              <div class="opacity-[0.5]"></div>
+            </div>
+          </div>
+          <div class="mt-[1.5rem] text-[14px]">
+            <p class="mb-4 font-medium">Thanks for your wonderful tool.</p>
+          </div>
+        </div>
+        <div
+          class="inline-block w-full rounded-[0.5rem] bg-white px-[1.5rem] py-[1rem] h-fit"
+        >
+          <div class="flex items-center">
+            <span
+              class="bg-[#11798C] rounded-full inline-flex items-center justify-center text-center upercase font-medium relative shrink-0 text-white border border-white align-top w-[3rem] h-[3rem] text-[calc(3rem/2.5)]"
+            >
+              <div class="leading-[3rem]">AG</div>
+            </span>
+            <div class="text-[14px] ml-[0.75rem]">
+              <strong>Andy Geraghty</strong>
+              <div class="opacity-[0.5]"></div>
+            </div>
+          </div>
+          <div class="mt-[1.5rem] text-[14px]">
+            <p class="mb-4 font-medium">I Love your website!</p>
+          </div>
+        </div>
+        <div
+          class="inline-block w-full rounded-[0.5rem] bg-white pl-[1.5rem] pr-[2rem] py-[1rem] h-fit"
+        >
+          <div class="flex items-center">
+            <span
+              class="bg-[#11798C] rounded-full inline-flex items-center justify-center text-center upercase font-medium relative shrink-0 text-white border border-white align-top w-[3rem] h-[3rem] text-[calc(3rem/2.5)] overflow-hidden"
+            >
+              <img
+                src="https://imgix.cosmicjs.com/ff494ab0-5993-11eb-a19e-83607d9500e5-surrey-streeter.png?q=&auto=compress,format,&w=48&h=48"
+                class="object-contain"
+                alt="Surrey"
+              />
+            </span>
+            <div class="text-[14px] ml-[0.75rem]">
+              <strong>Surrey</strong>
+              <div class="opacity-[0.5]"></div>
+            </div>
+          </div>
+          <div class="mt-[1.5rem] text-[14px]">
+            <p class="mb-4 font-medium">
+              I would like to start by saying I love your website and use it as
+              a tool to better my work.
+            </p>
+          </div>
+        </div>
+        <div
+          class="inline-block w-full rounded-[0.5rem] bg-white px-[1.5rem] py-[1rem] h-fit"
+        >
+          <div class="flex items-center">
+            <span
+              class="bg-[#42B5A5] rounded-full inline-flex items-center justify-center text-center upercase font-medium relative shrink-0 text-white border border-white align-top w-[3rem] h-[3rem] text-[calc(3rem/2.5)]"
+            >
+              <div class="leading-[3rem] text-black">MF</div>
+            </span>
+            <div class="text-[14px] ml-[0.75rem]">
+              <strong>Matt Fenell</strong>
+              <div class="opacity-[0.5]"></div>
+            </div>
+          </div>
+          <div class="mt-[1.5rem] text-[14px]">
+            <p class="mb-4 font-medium">
+              Your online tool has been a great help, especially with being able
+              to download results as a PDF. Your help is very much appreciated,
+              and thank you again for the amazing online tool.
+            </p>
+          </div>
+        </div>
+        <div
+          class="inline-block -mt-[82px] w-full rounded-[0.5rem] bg-white px-[1.5rem] py-[1rem] h-fit"
+        >
+          <div class="flex items-center">
+            <span
+              class="bg-[#11798C] rounded-full inline-flex items-center justify-center text-center upercase font-medium relative shrink-0 text-white border border-white align-top w-[3rem] h-[3rem] text-[calc(3rem/2.5)] overflow-hidden"
+            >
+              <img
+                src="https://imgix.cosmicjs.com/ff321930-5993-11eb-a19e-83607d9500e5-jonathan-camp.png?q=&auto=compress,format,&w=48&h=48"
+                class="object-contain"
+                alt="Jonathan Camp"
+              />
+            </span>
+            <div class="text-[14px] ml-[0.75rem]">
+              <strong>Jonathan Camp</strong>
+              <div class="opacity-[0.5]"></div>
+            </div>
+          </div>
+          <div class="mt-[1.5rem] text-[14px]">
+            <p class="mb-4 font-medium">
+              Hey Guys, I love your site. It's a real model for other SEO
+              experts to aim towards as it ticks a lot of boxes. Clean and
+              simple plus informational. A really big: Well done. I am in the
+              business and have been in IT / Web development for over 30 years.
+              It's a pleasure to browse a nicely put together website.
+            </p>
+          </div>
+        </div>
+        <div
+          class="inline-block -mt-[82px] w-full rounded-[0.5rem] bg-white px-[1.5rem] py-[1rem] h-fit"
+        >
+          <div class="flex items-center">
+            <span
+              class="bg-[#E2AC09] rounded-full inline-flex items-center justify-center text-center upercase font-medium relative shrink-0 text-white border border-white align-top w-[3rem] h-[3rem] text-[calc(3rem/2.5)]"
+            >
+              <div class="leading-[3rem] text-black">TB</div>
+            </span>
+            <div class="text-[14px] ml-[0.75rem]">
+              <strong>Tommy Buer</strong>
+              <div class="opacity-[0.5]"></div>
+            </div>
+          </div>
+          <div class="mt-[1.5rem] text-[14px]">
+            <p class="mb-4 font-medium">
+              I really liked the way you have presented your site. I was reading
+              some of your content and really found them informative.
+            </p>
+          </div>
+        </div>
+        <div
+          class="inline-block w-full -mt-[38px] rounded-[0.5rem] bg-white px-[1.5rem] py-[1rem] h-fit"
+        >
+          <div class="flex items-center">
+            <span
+              class="bg-[#B5F3BA] rounded-full inline-flex items-center justify-center text-center upercase font-medium relative shrink-0 text-white border border-white align-top w-[3rem] h-[3rem] text-[calc(3rem/2.5)]"
+            >
+              <div class="leading-[3rem] text-black">EP</div>
+            </span>
+            <div class="text-[14px] ml-[0.75rem]">
+              <strong>Erik Picasso Rogers</strong>
+              <div class="opacity-[0.5]"></div>
+            </div>
+          </div>
+          <div class="mt-[1.5rem] text-[14px]">
+            <p class="mb-4 font-medium">
+              I'm fond of this tool. I'm most impressed by the fact that it
+              houses a bunch of useful tools/actions under a single roof whereas
+              I'd normally have to visit a couple of different sites to get; I
+              will definitely keep using it and look forward to see what
+              benefits your plan upgrades come with.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-28">
+        <img
+          src="./images/pricingTestimonial.avif"
+          alt="pricingTestimonial"
+          class="mx-auto max-w-full h-auto block"
+        />
+      </div>
+    </section>
+
+    <section class="bg-white py-[72px] px-[1.5rem]">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">Here's What All Plans Include</h2>
+        <p class="text-lg text-black font-medium">
+          Powerful tools for powerful SEO
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 !items-start mt-12">
+        <div class="space-y-16">
+          <div class="flex gap-8">
+            <div
+              class="bg-[#FE6100] min-w-12 h-12 flex justify-center items-center text-2xl font-bold rounded-full text-white whitespace-nowrap"
+            >
+              1
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">Complete Website Analysis</h3>
+              <div
+                class="space-y-6 text-[1rem] leading-[1.5rem] mt-4 font-medium w-[420px]"
+              >
+                <p>
+                  The SEO ToolBox will whip out a complete analysis of your
+                  website, and give you a thorough report on how well your
+                  website is performing – as well as how optimized it is for
+                  SEO.
+                </p>
+                <p>
+                  What's more, the SEO ToolBox is supercharged – which means
+                  it's so much faster than our homepage tool, cutting back on
+                  the time it'll take you to have great web SEO. And since you
+                  can generate unlimited reports – and save them to your
+                  computer – it's really easy to keep track of your SEO efforts.
+                </p>
+                <p>
+                  In short, with the SEO ToolBox, you'll have a full SEO site
+                  checkup – quickly and effectively, whenever you like.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-8">
+            <div
+              class="bg-[#FE6100] min-w-12 h-12 flex justify-center items-center text-2xl font-bold rounded-full text-white whitespace-nowrap"
+            >
+              2
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">Website Monitoring</h3>
+              <div
+                class="text-[1rem] leading-[1.5rem] mt-4 font-medium w-[420px]"
+              >
+                <p>
+                  You'll be notified by email or text message whenever your site
+                  is down or unreachable, making it easy for you to get it up
+                  and running as soon as possible. Reliable uptime is critical
+                  to having a high-ranking website, so you'll find this tool
+                  particularly useful for maintaining a steady traffic stream.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-8">
+            <div
+              class="bg-[#FE6100] min-w-12 h-12 flex justify-center items-center text-2xl font-bold rounded-full text-white whitespace-nowrap"
+            >
+              3
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">
+                Track Your Site's Loading Speed
+              </h3>
+              <div
+                class="text-[1rem] leading-[1.5rem] mt-4 font-medium w-[420px]"
+              >
+                <p>
+                  The SEO ToolBox allows you to automatically monitor your
+                  site's loading speed. That means you'll be able to pinpoint
+                  when your server is having speed issues – and correct this.
+                  Again, this will result in more traffic for your site.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-16">
+          <div class="flex gap-8">
+            <div
+              class="bg-[#FE6100] min-w-12 h-12 flex justify-center items-center text-2xl font-bold rounded-full text-white whitespace-nowrap"
+            >
+              4
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">Easy Sitemap Generator</h3>
+              <div
+                class="text-[1rem] leading-[1.5rem] mt-4 font-medium w-[420px]"
+              >
+                <p>
+                  Input your site's URL. Click a button. With the SEO ToolBox,
+                  that's all it takes to get an XML sitemap of your website. And
+                  sitemaps are important to SEO – submitting a sitemap to Google
+                  Webmaster Tools is one way to rank higher on search engines.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-8">
+            <div
+              class="bg-[#FE6100] min-w-12 h-12 flex justify-center items-center text-2xl font-bold rounded-full text-white whitespace-nowrap"
+            >
+              5
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">Detect Broken Links</h3>
+              <div
+                class="text-[1rem] leading-[1.5rem] mt-4 font-medium w-[420px]"
+              >
+                <p>
+                  The SEO ToolBox will scan your site for broken links and other
+                  broken resources – such as images, CSS files, and JavaScript
+                  files. You can then quickly repair these broken links and
+                  resources, making your website a lot friendlier to visitors
+                  and search engines alike.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-8">
+            <div
+              class="bg-[#FE6100] min-w-12 h-12 flex justify-center items-center text-2xl font-bold rounded-full text-white whitespace-nowrap"
+            >
+              6
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">White Label Reports</h3>
+              <div
+                class="text-[1rem] leading-[1.5rem] mt-4 font-medium w-[420px]"
+              >
+                <p>
+                  Now you can easily generate custom SEO white label reports
+                  that document your SEO analysis. Keep this for yourself for
+                  future reference – or send it along to your clients and
+                  impress them with a professional report. (Not applicable for
+                  Basic Plan)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-8">
+            <div
+              class="bg-[#FE6100] min-w-12 h-12 flex justify-center items-center text-2xl font-bold rounded-full text-white whitespace-nowrap"
+            >
+              7
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold">Technical Support</h3>
+              <div
+                class="text-[1rem] leading-[1.5rem] mt-4 font-medium w-[420px]"
+              >
+                <p>
+                  We're always here for you. If the results you got aren't what
+                  you expected – or if you're having any problems at all –
+                  simply send us a message and one of our technical staff
+                  members (we're super friendly) will contact you and resolve
+                  your issue as soon as possible.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-[#F8F6F4] py-[72px] px-[1.75rem] grid grid-cols-2 items-center gap-[3rem] justify-center"
+    >
+      <div class="max-w-[506px] w-full mx-auto">
+        <div class="text-[54px] leading-[1.2] font-bold mb-[0.5rem]">
+          Why wait? Boost your website’s SEO right now!
+        </div>
+        <h2 class="text-[24px] leading-[1.45] text-[#62636b] mb[1rem]">
+          Analyze and monitor your SEO with our powerful SEO ToolBox.
+        </h2>
+        <form class="mt-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <!-- First Name -->
+            <div>
+              <input
+                type="text"
+                placeholder="First Name"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <!-- Last Name -->
+            <div>
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+          <!-- Email Address -->
+          <div class="mb-4">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <!-- Password -->
+          <div class="mb-4">
+            <input
+              type="password"
+              placeholder="Password"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <!-- Repeat Password -->
+          <div class="mb-4">
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <!-- Checkbox -->
+          <div class="flex items-center mb-4">
+            <input
+              type="checkbox"
+              id="terms"
+              class="mr-2 border-gray-300 rounded"
+            />
+            <label for="terms" class="text-gray-700"
+              >I agree to the
+              <a
+                href="/terms-of-service"
+                class="text-orange-600 hover:underline"
+                >Terms of Service</a
+              ></label
+            >
+          </div>
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full bg-orange-300 text-white py-3 rounded-lg font-bold hover:bg-orange-400 transition duration-200"
+          >
+            Start My 7-Day Trial
+          </button>
+        </form>
+      </div>
+      <div class="max-w-[506px] w-full mx-auto">
+        <div class="">
+          <ul class="space-y-4">
+            <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+              <svg
+                class="h-6 w-6 text-orange-500 mr-3"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                ></path>
+              </svg>
+              <strong>Complete Website Analysis</strong>
+            </li>
+            <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+              <svg
+                class="h-6 w-6 text-orange-500 mr-3"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                ></path>
+              </svg>
+              <strong>Website Monitoring</strong>
+            </li>
+            <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+              <svg
+                class="h-6 w-6 text-orange-500 mr-3"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                ></path>
+              </svg>
+              <strong>Track Your Site's Loading Speed</strong>
+            </li>
+            <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+              <svg
+                class="h-6 w-6 text-orange-500 mr-3"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                ></path>
+              </svg>
+              <strong>Easy Sitemap Generator</strong>
+            </li>
+            <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+              <svg
+                class="h-6 w-6 text-orange-500 mr-3"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                ></path>
+              </svg>
+              <strong>Detect Broken Links</strong>
+            </li>
+            <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+              <svg
+                class="h-6 w-6 text-orange-500 mr-3"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                ></path>
+              </svg>
+              <strong>White Label Reports</strong>
+            </li>
+            <li class="flex items-center py-4 border-b border-b-[#ecebea]">
+              <svg
+                class="h-6 w-6 text-orange-500 mr-3"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                ></path>
+              </svg>
+              <strong>Technical Support</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#001E42] py-[50px]">
+      <div class="grid grid-cols-2 !items-center px-[3rem]">
+        <h1
+          class="text-[32px] text-white max-w-[70%] leading-[1.2] font-bold mb-[0.75rem]"
+        >
+          Check your website's SEO for free right now!
+        </h1>
+        <form class="flex w-full max-w-[56%] ml-auto">
+          <div
+            class="relative w-full bg-white rounded-tl-md rounded-bl-md overflow-hidden focus:!outline-blue-400 focus:!outline focus:outline-3"
+          >
+            <input
+              type="text"
+              placeholder="Website URL"
+              class="w-full px-[1rem] text-lg py-3 focus:outline-none"
+            />
+          </div>
+          <button
+            type="submit"
+            class="bg-[#FE6100] hover:bg-[#CB4E00] text-white font-bold px-5 text-lg rounded-tr-md rounded-br-md"
+          >
+            Checkup
+          </button>
+        </form>
+      </div>
+
+      <div class="border-b border-b-[#E2E8F0] my-12 opacity-[0.2]"></div>
+
+      <div class="grid grid-cols-2 !items-start px-[3rem]">
+        <div>
+          <img
+            src="./images/logo-white.svg"
+            alt="logo-white"
+            class="h-[38px]"
+          />
+          <p class="max-w-[294px] my-[1.5rem] text-white text-[18px] font-bold">
+            Website SEO, Monitoring & Automation Made Easy.
+          </p>
+          <div class="flex items-center gap-[0.75rem] text-white">
+            <div
+              class="bg-[#334b68] rounded-full flex items-center justify-center h-9 w-9"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="bg-[#334b68] rounded-full flex items-center justify-center h-9 w-9"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-[2.5rem] ml-auto">
+          <div class="">
+            <div class="font-bold leading-[1.5] mb-[0.5rem] text-white">
+              Product
+            </div>
+            <ul role="list" class="text-white">
+              <li
+                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+              >
+                <a href="./pricing.html">Pricing</a>
+              </li>
+              <li
+                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]"
+              >
+                <a href="./freeTools.html">Free Tools</a>
+              </li>
+              <li
+                class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white mt-[0.5rem]"
+              >
+                Articles
+              </li>
+
+              <li class="mt-[0.5rem]">
+                <div class="inline-flex">
+                  <div
+                    class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+                  >
+                    Login
+                  </div>
+                </div>
+              </li>
+              <li class="mt-[0.5rem]">
+                <div class="inline-flex">
+                  <div
+                    class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+                  >
+                    Free 7-Day Trial
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="ml-[1em]">
+            <div class="font-bold leading-[1.5] mb-[0.5rem] text-white">
+              Company
+            </div>
+            <ul role="list" class="text-white">
+              <div>
+                <a
+                  href="./aboutus.html"
+                  class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+                  >About us</a
+                >
+              </div>
+              <div class="mt-[0.5rem]">
+                <a
+                  href="./faq.html"
+                  class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+                  >FAQs</a
+                >
+              </div>
+              <div class="mt-[0.5rem]">
+                <a
+                  href="./seoCheckup.html"
+                  class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+                  >SEO Checkups
+                </a>
+              </div>
+              <div class="mt-[0.5rem]">
+                <a
+                  href="./contact.html"
+                  class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+                  >SEO Contact
+                </a>
+              </div>
+            </ul>
+          </div>
+          <div class="ml-[1em]">
+            <div class="font-bold leading-[1.5] mb-[0.5rem] text-white">
+              Legal
+            </div>
+            <ul role="list" class="text-white">
+              <div>
+                <a
+                  href="./temsAndServices.html"
+                  class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+                  >Terms of Service</a
+                >
+              </div>
+              <div class="mt-[0.5rem]">
+                <a
+                  href="./privacypolicy.html"
+                  class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+                  >Privacy Policy</a
+                >
+              </div>
+              <div class="mt-[0.5rem]">
+                <a
+                  href="./refundpolicy.html"
+                  class="font-semibold cursor-pointer text-[#BFC7D0] hover:text-white"
+                  >Refunds Policy</a
+                >
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pl-[3rem] text-white mt-[5rem]">
+        © SEO Site Checkup 2020-2024 • All rights reserved
+      </div>
+    </footer>
+
+    <button
+      id="scrollToTopBtn"
+      class="bg-[#FE6100] w-12 h-12 p-2 right-6 bottom-6 fixed rounded-full flex justify-center items-center text-white"
+      style="display: none"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        focusable="false"
+        class="rotate-180"
+        aria-hidden="true"
+      >
+        <path
+          fill="currentColor"
+          d="M12 16l-6-6 1.41-1.41L12 13.17l4.59-4.58L18 10z"
+        ></path>
+      </svg>
+    </button>
+
+    <script src="./pricing.js"></script>
+  </body>
 </html>
